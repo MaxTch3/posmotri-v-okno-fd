@@ -135,7 +135,11 @@ ol {
 }
 
 .content__video-card-description-container {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
+  gap: 6px;
+  max-width: 196px;
 }
 
 .content__video-card-title {
@@ -143,6 +147,7 @@ ol {
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 30px;
+  line-height: 1;
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -151,7 +156,7 @@ ol {
 .content__video-card-description {
   display: -webkit-box;
   overflow: hidden;
-  line-height: 1.11;
+  line-height: 0.9;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   line-clamp: 4;
