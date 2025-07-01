@@ -41,6 +41,16 @@ ol {
   background-color: #d9d9d9;
 }
 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .page {
   display: flex;
   justify-content: center;
@@ -86,7 +96,58 @@ ol {
 .search-form__fieldset-title {
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.22;
+  line-height: 1;
+}
+
+.search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: none;
+}
+
+.search-form__label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: fit-content;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px #fff solid;
+  outline-offset: 1px;
+}
+
+.search-form__label:has(:active) {
+  outline: none;
+}
+
+.search-form__textfield {
+  border: none;
+  border-block-start: 1px #fff solid;
+  border-block-end: 1px #fff solid;
+  color: #fff;
+  font: inherit;
+  background-color: transparent;
+  appearance: none;
+  inline-size: 225px;
+}
+
+.search-form__textfield::placeholder {
+  color: rgb(255 255 255 / 0.7);
+}
+
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__textfield:active {
+  border: 1px #fff solid;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
 }
 
 .content__details {
