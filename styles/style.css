@@ -150,6 +150,44 @@ ol {
   gap: 15px;
 }
 
+.search-form__pseudo-checkbox {
+  inline-size: 19px;
+  block-size: 19px;
+  border: 1px #fff solid;
+  padding: 1px;
+}
+
+.search-form__pseudo-checkbox::after {
+  content: '';
+  display: block;
+  background-color: #fff;
+  inline-size: 100%;
+  block-size: 100%;
+  opacity: 0;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  opacity: 1;
+}
+
+.search-form__label-text {
+  border-block-end: 1px solid transparent;
+}
+
+.search-form__label:hover .search-form__label-text {
+  border-block-end: 1px #fff solid;
+}
+
+.search-form__label:has(.search-form__checkbox):active
+  .search-form__label-text {
+  border-block-end: 1px transparent solid;
+}
+
+.search-form__label:has(.search-form__checkbox):active
+  .search-form__pseudo-checkbox::after {
+  opacity: 1;
+}
+
 .content__details {
   display: flex;
   flex-direction: column;
