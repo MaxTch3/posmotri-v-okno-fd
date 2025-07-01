@@ -151,19 +151,19 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  inline-size: 19px;
-  block-size: 19px;
   border: 1px #fff solid;
   padding: 1px;
+  inline-size: 19px;
+  block-size: 19px;
 }
 
 .search-form__pseudo-checkbox::after {
   content: '';
   display: block;
+  opacity: 0;
   background-color: #fff;
   inline-size: 100%;
   block-size: 100%;
-  opacity: 0;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
@@ -186,6 +186,39 @@ ol {
 .search-form__label:has(.search-form__checkbox):active
   .search-form__pseudo-checkbox::after {
   opacity: 1;
+}
+
+.button {
+  border: 1px #fff solid;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  line-height: 1;
+  background-color: transparent;
+  min-block-size: 34px;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  text-decoration: none;
+  background-color: #545050;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px #fff solid;
+  outline-offset: 1px;
+}
+
+.search-form__submit-button {
+  align-self: end;
+  inline-size: 194px;
 }
 
 .content__details {
@@ -266,4 +299,8 @@ ol {
   object-position: center;
   block-size: 103px;
   min-inline-size: 194px;
+}
+
+.more-button {
+  inline-size: 100%;
 }
