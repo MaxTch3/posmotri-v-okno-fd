@@ -178,6 +178,10 @@ ol {
   border-block-end: 1px #fff solid;
 }
 
+.search-form__label:has(.search-form__checkbox) {
+  cursor: pointer;
+}
+
 .search-form__label:has(.search-form__checkbox):active
   .search-form__label-text {
   border-block-end: 1px transparent solid;
@@ -195,6 +199,7 @@ ol {
   font-weight: 700;
   line-height: 1;
   background-color: transparent;
+  cursor: pointer;
   min-block-size: 34px;
 }
 
