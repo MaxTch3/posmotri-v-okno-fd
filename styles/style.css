@@ -68,9 +68,7 @@ ol {
   display: flex;
   align-items: end;
   gap: 30px;
-  padding-inline-start: 30px;
-  padding-inline-end: 30px;
-  inline-size: 100%;
+  inline-size: 1140px;
 }
 
 .result__video-container {
@@ -96,7 +94,6 @@ ol {
 .search-form__fieldset-title {
   font-weight: 400;
   font-size: 18px;
-  line-height: 1;
 }
 
 .search-form__fieldset {
@@ -126,6 +123,7 @@ ol {
   border: none;
   border-block-start: 1px #fff solid;
   border-block-end: 1px #fff solid;
+  padding: 2px 0;
   color: #fff;
   font: inherit;
   background-color: transparent;
