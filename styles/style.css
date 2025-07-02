@@ -30,7 +30,7 @@ ol {
 /* Кастомный скроллбар */
 
 .custom-scrollbar::-webkit-scrollbar {
-  width: 4px;
+  inline-size: 4px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
@@ -107,7 +107,7 @@ ol {
   display: flex;
   align-items: center;
   gap: 5px;
-  width: fit-content;
+  inline-size: fit-content;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -296,7 +296,7 @@ ol {
   flex-direction: column;
   flex-grow: 1;
   gap: 4px;
-  max-width: 196px;
+  max-inline-size: 196px;
 }
 
 .content__video-card-title {
