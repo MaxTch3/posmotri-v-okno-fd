@@ -227,7 +227,7 @@ ol {
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 23px;
   inline-size: 100%;
   block-size: 100%;
 }
@@ -256,7 +256,7 @@ ol {
 .content__list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 27px;
 }
 
 .content__list-item {
@@ -295,7 +295,7 @@ ol {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  gap: 6px;
+  gap: 4px;
   max-width: 196px;
 }
 
